@@ -9,5 +9,8 @@ export class AppComponent {
   title = 'app works!';
 
   keyword = '';
-  
+
+  clearKeyword($event) {
+    this.keyword = '';
+  }
 }

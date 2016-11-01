@@ -77,7 +77,7 @@
               <div id="searchbox">
                 <input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s" [(ngModel)]="keyword">
                 <input type="button" value="搜尋" id="searchbutton">
-                {{ keyword }}
+                <span (click)="clearKeyword($event)">{{ keyword }}</span>
               </div>
           </div>
         </div>
