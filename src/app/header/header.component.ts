@@ -20,4 +20,10 @@ export class HeaderComponent implements OnInit {
     this.title = 'The Will Will Web';
   }
 
+  isRed: boolean;
+
+  changeColor() {
+    this.isRed = (this.isRed) ? false : true;
+  }
+
 }
