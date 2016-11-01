@@ -17,8 +17,6 @@ export class AppComponent {
   keywordKeyUp($event: KeyboardEvent) {
     console.log($event);
     var elm = $event.target as HTMLInputElement;
-    if($event.keyCode == 13) {
-      this.keyword = elm.value;
-    }
+    this.keyword = elm.value;
   }
 }
