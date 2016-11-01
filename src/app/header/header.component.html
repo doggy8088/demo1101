@@ -33,7 +33,7 @@
         <h3 [ngClass]="{title: isRed}" (click)="changeColor()">記載著 Will 在網路世界的學習心得與技術分享</h3>
       </div>
 
-      <div id="social-icons" class="pull-right social-icon">
+      <div *ngIf="!isRed" id="social-icons" class="pull-right social-icon">
         <a href="https://www.facebook.com/will.fans" title="Will 保哥的技術交流中心" target="_blank">
           <img src="/assets/images/facebook.png">
         </a>
