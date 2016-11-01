@@ -14,9 +14,7 @@ export class AppComponent {
     this.keyword = '';
   }
 
-  keywordKeyUp($event: KeyboardEvent) {
-    console.log($event);
-    var elm = $event.target as HTMLInputElement;
-    this.keyword = elm.value;
+  doSearch(str) {
+    this.keyword = str;
   }
 }
