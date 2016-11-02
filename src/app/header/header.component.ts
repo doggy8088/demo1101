@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,9 @@ export class HeaderComponent implements OnInit {
 
   titleUrl = 'http://blog.miniasp.com/';
 
+  @Output()
+  clickLogo = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
@@ -19,6 +22,7 @@ export class HeaderComponent implements OnInit {
 
   changeTitle() {
     this.title = 'The Will Will Web';
+    this.clickLogo.emit(this.title);
   }
 
   isRed: boolean;
