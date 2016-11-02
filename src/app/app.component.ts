@@ -16,10 +16,23 @@ export class AppComponent {
 
   doSearch(str) {
     this.keyword = str;
+    this.title = str;
   }
 
   click(str) {
     this.keyword = str;
+  }
+
+  ngOnInit() {
+    console.log('App Init');
+  }
+
+  ngOnChanges() {
+    console.log('App Changes');
+  }
+
+  ngDoCheck() {
+    console.log('App DoCheck');
   }
 
   data = [
