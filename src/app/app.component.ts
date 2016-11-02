@@ -10,6 +10,8 @@ export class AppComponent {
 
   keyword = '';
 
+  badword_list = ['Visual', 'Studio', '避免'];
+  
   clearKeyword($event) {
     this.keyword = '';
   }
